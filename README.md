@@ -9,7 +9,7 @@ Actualmente estoy estudiando el 2 año de Desarrollo de aplicaciones web.<br><br
 ![](https://github-readme-streak-stats.herokuapp.com/?user=AlexRegueiro&theme=dark&hide_border=false)<br/>
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=AlexRegueiro&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
 
-### 😂 Random Dev Meme
+### 😂 Random Memes
 <img src='https://randommeme-five.vercel.app/' style="height: 400px;"/>
 
 ---
