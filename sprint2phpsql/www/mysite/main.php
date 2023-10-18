@@ -19,8 +19,8 @@
 	// recorrer el resultado
 	while ($row = mysqli_fetch_array($result)){
 	   echo'<tr>';
-	   echo'<td>'.$row[0].'</td>';
-	   echo'<td>'.$row[1].'</td>';
+	   echo '<td>'.$row[0].'</td>';
+	   echo'<td><a href = "/detail.php?libro_id='.$row[0].'">'.$row[1].'</a></td>';
 	   $url = $row[2];
 	   echo '<td><img width="300px" height="250" src="'.$url.'"></td>';
 	   echo '<td>'.$row[3].'</td>';
