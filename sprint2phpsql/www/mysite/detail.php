@@ -28,6 +28,12 @@
 		mysqli_close($db);
 	   ?>
 	</ul>
+	<p>Deja un nuevo comentario:</p>
+	<form action="/comment.php" method="post">
+	   <textarea rows="4" cols="50" name="new_comment"></textarea><br>
+	   <input type="hidden" name="libro_id" value "<?php echo $libro_id; ?>">
+	   <input type="submit" value="comentar">
+	</form>
    </body>
 </html>
 
