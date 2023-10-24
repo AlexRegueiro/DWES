@@ -14,9 +14,9 @@
 	</tr>
       <?php
 	// Lanzar una query
-	$query = 'SELECT * FROM tLibros';
-	$result = mysqli_query($db, $query) or die('Query error');
-	// recorrer el resultado
+	$query = 'SELECT * FROM tLibros';  //Utilizamos la tabla de tLibros
+	$result = mysqli_query($db, $query) or die('Query error'); //metemos datos en una variable
+	// recorrer el resultado y creamos las etiquetas html
 	while ($row = mysqli_fetch_array($result)){
 	   echo'<tr>';
 	   echo '<td>'.$row[0].'</td>';

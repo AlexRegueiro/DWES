@@ -4,6 +4,7 @@
 <html>
    <body>
 	<?php
+	   //Aqui creamos el funcionamiento por donde el comentario enviado por la persona queda registrado en la base de datos  y se muestra el nuevo comentario de último
 	   $libro_id = $_POST['libro_id'];
 	   $comentario = $_POST['new_comment'];
 
