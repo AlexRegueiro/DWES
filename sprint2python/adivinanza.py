@@ -1,53 +1,29 @@
-Adivinanzas = {
-'Adivinanza': 'Nazco sin tener padre, y al morir vuelve a nacer mi madre.',
-'Opciones': """ 
-a) La nieve
-b) Un huérfano
-c) Un árbol 
-""",
-'Adivinanza2': 'Se viste el cielo de luces en cascada de colores, para alegrar a los que están más tristones.',
-'Opciones2': """ 
-a) Los fuegos artificiales
-b) Arcoiris
-c) Relámpagos
-""",
-'Adivinanza3': 'Te lo digo y te lo repito, y te lo puedo avisar, y por más que te lo diga no lo vas a adivinar.',
-'Opciones3': """ 
-a) Tu madre
-b) El té
-c) El intermitente
-"""
-}
+import random
+Adivinanzas= [
+    {'Adivinanza':'Nazco sin tener padre, y al morir vuelve a nacer mi madre.', 
+     'Opciones':' a) La nieve\n b) Un huérfano\n c) Un árbol',
+     'resultado':'a'},
+    {'Adivinanza':'Se viste el cielo de luces en cascada de colores, para alegrar a los que están más tristones.',
+     'Opciones':' a) Los fuegos artificiales\n b) Arcoiris\n c) Relámpagos',
+     'resultado':'a'},
+    {'Adivinanza':'Te lo digo y te lo repito, y te lo puedo avisar, y por más que te lo diga no lo vas a adivinar.',
+     'Opciones':' a) Tu madre\n b) El té\n c) El intermitente',
+     'resultado':'b'}
+]
 contador=0
-print(Adivinanzas.get('Adivinanza'))
-print(Adivinanzas.get('Opciones'))
-respuesta = input('Selecione una respuesta: ')
-if respuesta=='a':
-    print('Felicidades\n')
-    contador=contador+10
-else:
-    print('Erroneo\n')
-    contador=contador-5
 
-print(Adivinanzas.get('Adivinanza2'))
-print(Adivinanzas.get('Opciones2'))
-respuesta = input('Selecione una respuesta: ')
-if respuesta=='a':
-    print('Felicidades\n')
-    contador=contador+10
-else:
-    print('Erroneo\n')
-    contador=contador-5
 
-print(Adivinanzas.get('Adivinanza3'))
-print(Adivinanzas.get('Opciones3'))
-respuesta = input('Selecione una respuesta: ')
-if respuesta=='b':
-    print('Felicidades\n')
-    contador=contador+10
-else:
-    print('Erroneo\n')
-    contador=contador-5
-    
+for Adivinanza in random.sample(Adivinanzas,2):
+    print('\n')
+    print(Adivinanza['Adivinanza'])
+    print(Adivinanza['Opciones'])
+    resultado=input('Escoge una opción: ')
+    if resultado==Adivinanza['resultado']:
+        print('\nFelicidades')
+        contador=contador+10
+    else:
+        print('\nErroneo')
+        contador=contador-5
+
 contador=str(contador)
-print('Puntuación total: '+contador)
+print('Total de puntuación: '+contador)
