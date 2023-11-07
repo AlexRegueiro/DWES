@@ -28,8 +28,9 @@
 		  echo '<li>'.$row['comentario']." ".$row['fecha'].'</li>';
 		}
 		mysqli_close($db); //cerramos la base de datos
-	   ?>
 //Creamos un formulario por donde las personas puedan dejar su comentario respecto al libro que quieran
+
+	   ?>
 	</ul>
 	<p>Deja un nuevo comentario:</p>
 	<form action="/comment.php" method="post">
