@@ -18,7 +18,9 @@
 	  echo '<h2><img width="300px" height="250px" src="'.$url.'"></h2>';
 	  echo '<h2>'.$only_row[3].'</h2>';
 	  echo '<h2>'.$only_row[4].'</h2>';
+
 	?>
+	
 	<h3>Comentarios:</h3>
 	<ul>
 	   <?php
