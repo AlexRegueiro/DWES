@@ -40,6 +40,9 @@
 	   <input type="hidden" name="libro_id" value= "<?php echo $libro_id; ?>">
 	   <input type="submit" value="comentar">
 	</form>
+	<form action="logout.php" method="post"><br>
+            <input type="submit" value="Cerrar Sesion">
+        </form>
    </body>
 </html>
 
