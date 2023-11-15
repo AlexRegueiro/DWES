@@ -7,6 +7,9 @@
 	</head>
    <body>
       <h1>Conexión establecida</h1>
+	  <form action="cambiarcontraseña.html" method="post"><br>
+            <input type="submit" value="Cambiar contraseña">
+        </form>
 	<table>
 	<tr>
 	<th>ID</th>
