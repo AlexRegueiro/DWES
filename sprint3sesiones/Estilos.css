@@ -1,0 +1,10 @@
+tr:hover{
+    transform: scale(1.25);
+}
+*{
+    text-align: center;
+}
+table{
+    margin-left: auto;
+    margin-right: auto;
+}

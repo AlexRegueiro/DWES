@@ -2,6 +2,9 @@
    $db = mysqli_connect('127.0.0.1', 'root', '1234', 'mysitedb');
 ?>
 <html>
+	<head>
+		<link rel="stylesheet" href=Estilos.css>
+	</head>
    <body>
       <h1>Conexión establecida</h1>
 	<table>
