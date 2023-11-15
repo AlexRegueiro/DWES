@@ -21,8 +21,9 @@
         }
    }
 //Si el email existe o hay campos vacios o las contraseñas no coinciden va a mostrar un mensaje de error
+   
    if($sw==1 || $email==null || $contraseña==null || $contraseñarepe==null || $nombre==null || $apellidos==null){
-    die('<h1>Error</h1>');
+      die('<h1>Error</h1>');
    }
    if($contraseña!=$contraseñarepe){
     die('<h1>Error</h1>');
